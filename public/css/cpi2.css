@@ -1,0 +1,77 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.heading {
+ background-image: url(https://farm8.staticflickr.com/7228/7305626676_cf68f91f14_b.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  height: 550px;
+}
+
+.navbar-default {
+	background-color: rgba(0, 0, 0, 0.4);
+	border: none;
+	min-height: 70px;
+}
+
+.navbar-brand, .navbar-toggle {
+	margin-top: 0.6em;
+	text-transform: uppercase;
+}
+
+.navbar-right li a {
+	margin-top: 0.6em;
+	text-transform: uppercase;
+}
+.navbar .container-fluid {
+	width: 90%;
+}
+
+h1 {
+	color: #fff;
+	text-align: center;
+	padding-top: 130px;
+	font-family: 'Cookie', cursive;
+	font-size: 5em;
+}
+
+.center {
+	text-align: center;
+}
+
+.facebook {
+	text-align: center;
+	color: #fff;
+}
+
+.thumbnail {
+	margin-left: 5%;
+}
+/*HOMEPAGE*/
+
+#featured {
+	background: #f2f2f2;
+	text-align: center;
+	padding: 1em 0em;
+}
+#featured section {
+	margin: 0px auto;
+}
+
+#last {
+	background: #fff;
+}
+#last h2 {
+	margin-top: 1em;
+}
+#last .col-md-4 {
+	margin-top: 1em;
+}
+.pennant
+{
+	color: #bbb;
+	font-size: 4em;
+}
+/*EFFETS CSS*/
