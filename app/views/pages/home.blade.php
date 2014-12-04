@@ -10,6 +10,9 @@
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
 	<div class="heading">
+		<div id="video-container">
+			<video id="bg" preload="true" src="videos/selfievideo.mp4" autoplay="true" loop="true" muted="true"></video>
+		</div>
 		<!-- Ma barre de navigation -->
 		<nav class="navbar navbar-default" role="navigation">
 		  <div class="container-fluid">
@@ -43,11 +46,15 @@
 		  </div><!-- /.container-fluid -->
 		</nav>
 
+		
+
 		<h1>Laissez-nous vos meilleurs selfies !!!</h1>
 		<div class="facebook">
 			<div class="fb-like" data-href="https://www.facebook.com/japprendslecode" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
 		</div>
 	</div>
+
+
 
 	<div id="featured">
 	  <div class="container">

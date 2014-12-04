@@ -3,7 +3,7 @@
 }
 
 .heading {
- background-image: url(https://farm8.staticflickr.com/7228/7305626676_cf68f91f14_b.jpg);
+  background-image: url(https://farm8.staticflickr.com/7228/7305626676_cf68f91f14_b.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top right;
@@ -14,6 +14,9 @@
 	background-color: rgba(0, 0, 0, 0.4);
 	border: none;
 	min-height: 70px;
+	position: absolute;
+	top: 0px;
+	width: 100%;
 }
 
 .navbar-brand, .navbar-toggle {
@@ -32,9 +35,11 @@
 h1 {
 	color: #fff;
 	text-align: center;
-	padding-top: 130px;
+	top: 230px;
 	font-family: 'Cookie', cursive;
 	font-size: 5em;
+	position: absolute;
+	width: 100%;
 }
 
 .center {
@@ -44,6 +49,10 @@ h1 {
 .facebook {
 	text-align: center;
 	color: #fff;
+	position: absolute;
+	width: 100%;
+	top: 330px;
+
 }
 
 .thumbnail {
@@ -74,4 +83,15 @@ h1 {
 	color: #bbb;
 	font-size: 4em;
 }
+/*VIDEO*/
+#bg {
+	width: 100%;
+	z-index: -1999;
+}
+
+#video-container {
+	height: 550px;
+	overflow: hidden;
+}
+
 /*EFFETS CSS*/
