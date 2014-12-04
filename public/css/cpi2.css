@@ -2,14 +2,6 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
-.heading {
-  background-image: url(https://farm8.staticflickr.com/7228/7305626676_cf68f91f14_b.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top right;
-  height: 550px;
-}
-
 .navbar-default {
 	background-color: rgba(0, 0, 0, 0.4);
 	border: none;
@@ -82,16 +74,6 @@ h1 {
 {
 	color: #bbb;
 	font-size: 4em;
-}
-/*VIDEO*/
-#bg {
-	width: 100%;
-	z-index: -1999;
-}
-
-#video-container {
-	height: 550px;
-	overflow: hidden;
 }
 
 /*EFFETS CSS*/

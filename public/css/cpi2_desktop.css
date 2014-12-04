@@ -1,0 +1,9 @@
+#video-container {
+	height: 550px;
+}
+
+#bg {
+	width: 100%;
+	position: fixed;
+	z-index: -1000;
+}

@@ -10,9 +10,11 @@
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
 	<div class="heading">
+
 		<div id="video-container">
-			<video id="bg" preload="true" src="videos/selfievideo.mp4" autoplay="true" loop="true" muted="true"></video>
+			<video id="bg" src="videos/selfievideo.mp4" autoplay="true" loop="true" muted="true"></video>
 		</div>
+
 		<!-- Ma barre de navigation -->
 		<nav class="navbar navbar-default" role="navigation">
 		  <div class="container-fluid">

@@ -9,6 +9,8 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Cookie' rel='stylesheet' type='text/css'>
 
 		<link rel="stylesheet" type="text/css" href="css/cpi2.css">
+		<link rel="stylesheet" media="screen and (min-width: 1024px)" href="css/cpi2_desktop.css" />
+		<link rel="stylesheet" media="screen and (max-width: 1024px)" href="css/cpi2_mobile.css" />
 	</head>
 	<body>
 		@yield('content')

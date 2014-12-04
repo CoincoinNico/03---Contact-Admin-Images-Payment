@@ -1,0 +1,11 @@
+.heading {
+  background-image: url(https://farm8.staticflickr.com/7228/7305626676_cf68f91f14_b.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  height: 550px;
+}
+
+#video-container, .facebook {
+	display: none;
+}
