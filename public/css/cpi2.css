@@ -76,4 +76,16 @@ h1 {
 	font-size: 4em;
 }
 
+.main-page {
+	padding-top: 100px;
+}
+
+.form {
+	width: 60%;
+	margin: 0 auto;
+}
+.has-error {
+	color: red;
+}
+
 /*EFFETS CSS*/
