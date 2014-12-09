@@ -44,6 +44,13 @@ return array(
 	|
 	*/
 
+	$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+	$host = $url["host"];
+	$username = $url["user"];
+	$password = $url["pass"];
+	$database = substr($url["path"], 1);
+
 	'connections' => array(
 
 		'sqlite' => array(
@@ -51,13 +58,22 @@ return array(
 			'database' => __DIR__.'/../database/production.sqlite',
 			'prefix'   => '',
 		),
-
+		// 'mysql' => array(
+		// 	'driver'    => 'mysql',
+		// 	'host'      => 'localhost',
+		// 	'database'  => 'selfie',
+		// 	'username'  => 'root',
+		// 	'password'  => 'root',
+		// 	'charset'   => 'utf8',
+		// 	'collation' => 'utf8_unicode_ci',
+		// 	'prefix'    => '',
+		// ),
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'selfie',
-			'username'  => 'root',
-			'password'  => 'root',
+			'host'      => $host,
+      'database'  => $database,
+      'username'  => $username,
+      'password'  => $password,
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
