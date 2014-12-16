@@ -2,6 +2,8 @@
 
 class Selfie extends Eloquent {
 
+	protected $fillable = array('title', 'user_id');
+
 
 	public function user ()
 	{

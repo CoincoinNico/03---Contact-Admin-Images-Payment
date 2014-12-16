@@ -88,4 +88,8 @@ h1 {
 	color: red;
 }
 
+.form-delete {
+	display: inline-block;
+}
+
 /*EFFETS CSS*/

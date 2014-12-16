@@ -2,17 +2,22 @@
 
 class UsersController extends BaseController {
 
-	//Affichage d'un utilisateur
+	// Affichage d'un utilisateur
 	public function show($id)
 	{
+		// je trouve l'utilisateur grâce à son id et le stocke dans la variable $user
 		$user = User::find($id);
+		// je retourne la vue correspondante en passant la variable
 		return View::make('users.show')->with('user', $user);
 	}
 
-	//Connexion d'un utilisateur
+	// Connexion d'un utilisateur
 	public function login()
 	{
 		// On vérifie si un formulaire a été soumis
+		// en effet il existe quatre verbes HTTP le plus souvent on utilise GET
+		// mais lorsqu'on soumet un formulaire, c'est une requête POST
+		// quand on se log out, c'est une requête DELETE
 		if (Request::isMethod('post'))
 		{
 			//on récupère les données du formulaires dans un tableau
@@ -20,10 +25,10 @@ class UsersController extends BaseController {
 	    	'username' => Input::get('username'),
 				'password' => Input::get('password')
   		);
-  		//on vérifie si ces données permettent un login
+  		//on vérifie si ces données permettent un login (retourne true si oui)
   		if(Auth::attempt($userdata))
   		{
-  			//alors on redirige vers les selfies en indiquant que la connexion est réussi
+  			//alors on redirige vers les selfies en indiquant que la connexion est réussie
   			return Redirect::to('/selfies')->with('message', 'Connexion réussie !');
   		}
   		else
@@ -40,13 +45,13 @@ class UsersController extends BaseController {
 	}
 
 	//insscription d'un utilisateur, il charge la page
-	public function registration()
+	public function create()
 	{
 		return View::make('users.registration');
 	}
 
 	//inscription d'un utilisateur, il envoie la demande
-	public function create()
+	public function store()
 	{
 		//on impose des contraintes aux données du formulaire
 		$rules = array(
@@ -71,10 +76,8 @@ class UsersController extends BaseController {
 				'password' => Hash::make(Input::get('password'))
     		);
     	//on crée un utilisateur avec cela, attention de bien laisser la possibilité de créer un utilisateur depuis le Model avec fillable
-    	if(User::create($data))
-    	{
-    		Session::flash('message', 'Inscription terminée');
-    	}
+    	User::create($data);
+    	Session::flash('message', 'Inscription terminée');
     }
     return Redirect::to('selfies');
 	}
