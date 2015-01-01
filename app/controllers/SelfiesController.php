@@ -4,9 +4,9 @@ class SelfiesController extends BaseController {
 
 	public function index()
 	{
-		// je récupère tous les selfies et les stocke dans la variable $selfies
+		// je récupère tous les selfies et les stocke dans une variable
 		$selfies = Selfie::all();
-		// je charge la vue views/selfies/index, $selfies sera accessible dans la vue
+		// la variable $selfies sera accessible dans la vue index
 		return View::make('selfies.index')->with('selfies', $selfies);
 	}
 
@@ -35,14 +35,18 @@ class SelfiesController extends BaseController {
 
     if ($validator->fails())
     {
-    	//si ce n'est pas le cas, on indique où sont les erreurs
+    	// si ce n'est pas le cas, on indique où sont les erreurs
       return Redirect::to('selfies/'. $id .'edit')->withErrors($validator)->withInput();
     }
     else 
     {
+    	// je récupère le selfie
     	$selfie = Selfie::find($id);
+    	// je change la valeur du champ titre
       $selfie->title = Input::get('title');
+      // je le sauvegarde
       $selfie->save();
+      // j'utilise les messages flash et je stocke Selfie dans 'message'
   		Session::flash('message', 'Selfie updaté');
   		return Redirect::to('selfies');
   	}

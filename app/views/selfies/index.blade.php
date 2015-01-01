@@ -17,7 +17,7 @@
 				<!-- Je passe au lien la variable $selfie-> id ce qui veut dire que le controller
 				pourra récupérer l'id, cette information lui sera envoyée ! -->
 				<h2>{{ HTML::linkAction('SelfiesController@show', $selfie-> title, array($selfie-> id), array('class' => 'selfie')) }}</h2>
-				<p>ajouté par {{ HTML::linkAction('UsersController@show', $selfie-> user-> username, array($selfie-> user-> id)) }}</p>
+				<p>ajouté par {{ HTML::linkAction('UsersController@show', $selfie-> user-> email, array($selfie-> user-> id)) }}</p>
 				
 				@if(Auth::check() && Auth::User()->id == $selfie->user_id)
 					<span>{{ HTML::linkAction('SelfiesController@edit', 'Editer', array($selfie-> id), array('class' => 'selfie')) }}</span>
