@@ -1,6 +1,6 @@
 @extends('layouts.application')
 @section('content')
-@include('layouts.nav')
+@include('layouts.nav.navOther')
 <div class="container">
 	<div class="main-page">
 	<h2>Editer {{ $selfie->title }}</h2>

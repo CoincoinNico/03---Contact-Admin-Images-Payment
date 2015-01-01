@@ -2,29 +2,43 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
+/* NAVBAR */
 .navbar-default {
-	background-color: rgba(0, 0, 0, 0.4);
 	border: none;
-	min-height: 70px;
 	position: absolute;
 	top: 0px;
 	width: 100%;
 }
 
-.navbar-brand, .navbar-toggle {
-	margin-top: 0.6em;
+.navbar-default, .navOther, .nav .open>a {
+	height: 50px;
+}
+
+
+.navHome {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navOther {
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.navbar-brand, .navbar-toggle, .navbar-right li a {
 	text-transform: uppercase;
 }
 
-.navbar-right li a {
-	margin-top: 0.6em;
-	text-transform: uppercase;
-}
 .navbar .container-fluid {
 	width: 90%;
 }
 
-h1 {
+.navbar-right li .nav-link {
+	padding-top: 1.2em;
+	margin: 0;
+}
+
+/* END OF NAVBAR */
+
+.main-title {
 	color: #fff;
 	text-align: center;
 	top: 230px;
@@ -34,12 +48,11 @@ h1 {
 	width: 100%;
 }
 
-.center {
+.center, #featured, .facebook {
 	text-align: center;
 }
 
 .facebook {
-	text-align: center;
 	color: #fff;
 	position: absolute;
 	width: 100%;
@@ -50,11 +63,11 @@ h1 {
 .thumbnail {
 	margin-left: 5%;
 }
+
 /*HOMEPAGE*/
 
 #featured {
 	background: #f2f2f2;
-	text-align: center;
 	padding: 1em 0em;
 }
 #featured section {
@@ -64,20 +77,17 @@ h1 {
 #last {
 	background: #fff;
 }
-#last h2 {
+#last h2, #last .col-md-4 {
 	margin-top: 1em;
 }
-#last .col-md-4 {
-	margin-top: 1em;
-}
-.pennant
-{
+
+.pennant {
 	color: #bbb;
 	font-size: 4em;
 }
 
 .main-page {
-	padding-top: 100px;
+	padding-top: 70px;
 }
 
 .form {
@@ -92,4 +102,3 @@ h1 {
 	display: inline-block;
 }
 
-/*EFFETS CSS*/

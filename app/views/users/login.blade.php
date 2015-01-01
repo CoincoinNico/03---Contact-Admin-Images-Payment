@@ -1,6 +1,6 @@
 @extends('layouts.application')
 @section('content')
-@include('layouts.nav')
+@include('layouts.nav.navOther')
 <div class="container">
 	<div class="main-page">
 		<div class="form">

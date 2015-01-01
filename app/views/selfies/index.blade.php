@@ -1,6 +1,6 @@
 @extends('layouts.application')
 @section('content')
-@include('layouts.nav')
+@include('layouts.nav.navOther')
 <div class="container">
 	<div class="main-page">
 		<!-- Je vérifie s'il y a un paramètre s'appelant 'message' -->
@@ -20,9 +20,9 @@
 				<p>ajouté par {{ HTML::linkAction('UsersController@show', $selfie-> user-> email, array($selfie-> user-> id)) }}</p>
 				
 				@if(Auth::check() && Auth::User()->id == $selfie->user_id)
-					<span>{{ HTML::linkAction('SelfiesController@edit', 'Editer', array($selfie-> id), array('class' => 'selfie')) }}</span>
+					<span>{{ HTML::decode(HTML::linkAction('SelfiesController@edit', '<i class="fa fa-pencil-square-o"></i>Editer', array($selfie-> id), array('class' => 'selfie'))) }}</span>
 					{{Form::open(array('action' => array('SelfiesController@delete', $selfie->id), 'class'=>'form-delete', 'method' => 'DELETE'))}}
-            {{ Form::submit('Supprimer ce selfie', array('class' => 'btn btn-link')) }}
+          {{ Form::button('<i class="fa fa-times"></i>Supprimer ce selfie', array('type' => 'submit', 'class' => 'btn btn-link')) }}
           {{ Form::close() }}
 				@endif
 

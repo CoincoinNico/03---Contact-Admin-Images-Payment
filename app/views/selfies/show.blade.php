@@ -1,9 +1,9 @@
 @extends('layouts.application')
 @section('content')
-@include('layouts.nav')
+@include('layouts.nav.navOther')
 <div class="container">
 	<div class="main-page">
-		<h2>{{ HTML::linkAction('SelfiesController@show', $selfie-> title, array($selfie-> id), array('class' => 'selfie')) }}</h2>
+		<h2>{{ $selfie-> title }}</h2>
         <p>ajouté par {{ HTML::linkAction('UsersController@show', $selfie-> user-> email, array($selfie-> user-> id)) }}</p>
 	</div>
 	<div id="disqus_thread"></div>

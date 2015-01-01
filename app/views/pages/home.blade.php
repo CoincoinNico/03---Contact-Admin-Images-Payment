@@ -15,9 +15,9 @@
 			<video id="bg" src="videos/selfievideo.mp4" autoplay="true" loop="true" muted="true"></video>
 		</div>
 
-		@include('layouts.nav')
+		@include('layouts.nav.navHome')
 
-		<h1>Laissez-nous vos meilleurs selfies !!!</h1>
+		<h1 class="main-title">Laissez-nous vos meilleurs selfies !!!</h1>
 		<div class="facebook">
 			<div class="fb-like" data-href="https://www.facebook.com/japprendslecode" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
 		</div>
