@@ -69,3 +69,9 @@ Route::get('user/{id}', 'UsersController@show');
 Route::get('users/signup', 'UsersController@create');
 Route::post('users/signup', 'UsersController@store');
 Route::get('users/logout', 'UsersController@logout');
+
+/*
+|--------------------------------------------------------------------------
+| contact
+|--------------------------------------------------------------------------
+|*/

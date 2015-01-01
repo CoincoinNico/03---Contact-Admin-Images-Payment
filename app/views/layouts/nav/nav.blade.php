@@ -19,7 +19,6 @@ et ajouterai arobas include('layouts.nav') pour l'inclure sur les autres pages. 
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav navbar-right">
       <li><a href="/selfies" class="nav-link">Les Selfies</a></li>
-      <li><a href="/contact" class="nav-link">Contact</a></li>
       <li class="dropdown">
         <!-- Permet de vérifier si l'utilisateur est connecté. Intégré à Laravel -->
         @if(Auth::check())
