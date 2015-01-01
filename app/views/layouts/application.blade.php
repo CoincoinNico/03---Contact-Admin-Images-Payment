@@ -1,5 +1,5 @@
-<!-- C'est votre modèle ! Ces lignes seront présentes sur toutes les pages où
-vous invoquerez extends('layouts.application') -->
+<!-- C'est votre modèle. Ces lignes seront présentes sur toutes les pages où
+vous invoquerez arobas extends('layouts.application') -->
 <!doctype html>
 <html>
 	<head>
@@ -10,7 +10,7 @@ vous invoquerez extends('layouts.application') -->
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Cookie' rel='stylesheet' type='text/css'>
 
-		<!-- Tous les liens sont réalisés à partir du fichier  -->
+		<!-- Tous les liens sont réalisés à partir du fichier public  -->
 		<link rel="stylesheet" type="text/css" href="/css/cpi2.css">
 		<!-- Je charge différents CSS selon que je suis sur tablette ou sur PC -->
 		<link rel="stylesheet" media="screen and (min-width: 1024px)" href="/css/cpi2_desktop.css" />

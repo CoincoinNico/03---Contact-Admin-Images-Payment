@@ -4,7 +4,7 @@
 <div class="container">
 	<div class="main-page">
 	<h2>Editer {{ $selfie->title }}</h2>
-    {{Form::open(array('action' => array('SelfiesController@update', $selfie->id), 'method' => 'PUT'))}}
+    {{Form::open(array('action' => array('SelfiesController@update', $selfie->id), 'method' => 'POST'))}}
     {{Form::token()}}
 
     {{Form::text('title', $selfie->title, array('class'=>'form-control'))}}

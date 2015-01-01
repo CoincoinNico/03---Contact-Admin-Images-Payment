@@ -50,7 +50,7 @@ Route::post('selfies/new','SelfiesController@store');
 Route::get('selfie/{id}', 'SelfiesController@show');
 // UPDATE
 Route::get('selfie/{id}/edit', 'SelfiesController@edit');
-Route::put('selfie/{id}/edit', 'SelfiesController@update');
+Route::post('selfie/{id}/edit', 'SelfiesController@update');
 // DELETE
 Route::delete('selfie/{id}', 'SelfiesController@delete');
 
