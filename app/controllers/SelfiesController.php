@@ -73,7 +73,8 @@ class SelfiesController extends BaseController {
     {
     	$data = array(
     		'title' => Input::get('title'),
-    		'user_id' => Auth::user()-> id
+    		'user_id' => Auth::user()-> id,
+    		'picture' => Input::file('picture')
     	);
     	Selfie::create($data);
     	Session::flash('message', 'Selfie ajouté');

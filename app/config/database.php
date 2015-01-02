@@ -1,10 +1,10 @@
 <?php
 
-$url = parse_url(getenv('CLEARDB_DATABASE_URL'));
-$host = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$database = substr($url["path"], 1);
+// $url = parse_url(getenv('CLEARDB_DATABASE_URL'));
+// $host = $url["host"];
+// $username = $url["user"];
+// $password = $url["pass"];
+// $database = substr($url["path"], 1);
 
 return array(
 
@@ -21,31 +21,31 @@ return array(
 			'prefix'   => '',
 		),
 	
-		// 'mysql' => array(
-		// 	'driver'    => 'mysql',
-		// 	'host'      => 'localhost',
-		// 	'database'  => 'selfie', // le nom de la BDD que nous avons créée
-		// 	'username'  => 'root', // les identifiants de connexion à la BDD
-		// 	'password'  => 'root', // avec le MDP
-		// 	'charset'   => 'utf8',
-		// 	'collation' => 'utf8_unicode_ci',
-		// 	'prefix'    => '',
-		// ),
+		'mysql' => array(
+			'driver'    => 'mysql',
+			'host'      => 'localhost',
+			'database'  => 'selfie', // le nom de la BDD que nous avons créée
+			'username'  => 'root', // les identifiants de connexion à la BDD
+			'password'  => 'root', // avec le MDP
+			'charset'   => 'utf8',
+			'collation' => 'utf8_unicode_ci',
+			'prefix'    => '',
+		),
 
 // PRODUCTION
 		
 		
 
-		'mysql' => array(
-			'driver'    => 'mysql',
-			'host'      => $host,
-      'database'  => $database,
-      'username'  => $username,
-      'password'  => $password,
-			'charset'   => 'utf8',
-			'collation' => 'utf8_unicode_ci',
-			'prefix'    => '',
-		),
+		// 'mysql' => array(
+		// 	'driver'    => 'mysql',
+		// 	'host'      => $host,
+  //     'database'  => $database,
+  //     'username'  => $username,
+  //     'password'  => $password,
+		// 	'charset'   => 'utf8',
+		// 	'collation' => 'utf8_unicode_ci',
+		// 	'prefix'    => '',
+		// ),
 
 	),
 

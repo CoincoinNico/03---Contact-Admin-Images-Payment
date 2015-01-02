@@ -1,8 +1,14 @@
 <?php
 
-class Selfie extends Eloquent {
+use Codesleeve\Stapler\ORM\StaplerableInterface;
+use Codesleeve\Stapler\ORM\EloquentTrait;
 
-	protected $fillable = array('title', 'user_id');
+class Selfie extends Eloquent implements StaplerableInterface {
+
+  use EloquentTrait;
+
+  protected $guarded = array('id');
+	protected $fillable = array('picture', 'title', 'user_id');
 
 
 	public function user ()
@@ -10,9 +16,16 @@ class Selfie extends Eloquent {
 		return $this->belongsTo('User');
 	}
 
-	public function comments()
-	{
-		return $this->hasMany('Comment');
+	public function __construct(array $attributes = array()) {
+    $this->hasAttachedFile('picture', [
+      'styles' => [
+        'prompt' => '380',
+        'thumb' => '100'
+       ],
+      'default_url' => '/:attachment/:style/missing.jpg'
+    ]);
+
+    parent::__construct($attributes);
 	}
 
 

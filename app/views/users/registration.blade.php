@@ -16,6 +16,9 @@
 			{{$errors->first('email', '<span class="has-error">:message</span>')}}
 			<br/>
 			<br/>
+			{{Form::file('avatar', array('class'=>'form-control', 'placeholder'=>'Une photo de vous'))}}
+			<br/>
+			<br/>
 			{{Form::password('password', array('class'=>'form-control', 'placeholder'=>'Votre mot de passe'))}}
 			{{$errors->first('password', '<span class="has-error">:message</span>')}}
 			<br/>

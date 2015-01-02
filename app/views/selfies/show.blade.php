@@ -4,7 +4,7 @@
 <div class="container">
 	<div class="main-page">
 		<h2>{{ $selfie-> title }}</h2>
-        <p>ajouté par {{ HTML::linkAction('UsersController@show', $selfie-> user-> email, array($selfie-> user-> id)) }}</p>
+    <p>ajouté par {{ HTML::linkAction('UsersController@show', $selfie-> user-> email, array($selfie-> user-> id)) }}</p>
 	</div>
 	<div id="disqus_thread"></div>
   <script type="text/javascript">
