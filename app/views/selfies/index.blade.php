@@ -42,12 +42,4 @@
 @endsection
 
 {{ HTML::script('js/masonry.js') }}
-
-<script type="text/javascript">
-	var selfies = document.querySelector('#selfies');
-	var msnry = new Masonry( selfies, {
-	  // options
-	  itemSelector: '.box'
-	});
-
-</script>
+{{ HTML::script('js/selfies.js') }}
