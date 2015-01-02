@@ -75,3 +75,28 @@ Route::get('users/logout', 'UsersController@logout');
 | contact
 |--------------------------------------------------------------------------
 |*/
+
+
+/*
+|--------------------------------------------------------------------------
+| ADMIN
+|--------------------------------------------------------------------------
+|*/
+Route::controller('admin/selfies', 'SelfiesController');
+
+
+/*
+|--------------------------------------------------------------------------
+| STRIPE
+|--------------------------------------------------------------------------
+|*/
+
+Route::get('pay', function(){
+	return View::make('stripe');
+});
+
+Route::post('pay', 'ChargesController@payment');
+
+Route::get('pay/success', function(){
+	return View::make('pay.success');
+});

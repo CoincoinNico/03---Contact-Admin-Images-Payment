@@ -8,7 +8,7 @@ class Selfie extends Eloquent implements StaplerableInterface {
   use EloquentTrait;
 
   protected $guarded = array('id');
-	protected $fillable = array('picture', 'title', 'user_id');
+	protected $fillable = array('picture', 'title', 'user_id', 'price');
 
 
 	public function user ()

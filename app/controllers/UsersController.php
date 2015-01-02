@@ -5,10 +5,8 @@ class UsersController extends BaseController {
 	// Affichage d'un utilisateur
 	public function show($id)
 	{
-		// je trouve l'utilisateur grâce à son id et le stocke dans la variable $user
-		$user = User::find($id);
 		// je retourne la vue correspondante en passant la variable
-		return View::make('users.show')->with('user', $user);
+		return View::make('users.show')->with('user', User::find($id));
 	}
 
 	// Connexion d'un utilisateur

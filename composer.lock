@@ -4,8 +4,103 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7ebdccfbce25ca06715cafc1bed9a069",
+    "hash": "ae3de82ad747f3420f0518e11c3c9523",
     "packages": [
+        {
+            "name": "barryvdh/laravel-debugbar",
+            "version": "v1.8.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-debugbar.git",
+                "reference": "548e12d45760ee66192029f4b642d2f4e3d64118"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/548e12d45760ee66192029f4b642d2f4e3d64118",
+                "reference": "548e12d45760ee66192029f4b642d2f4e3d64118",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "4.*|5.0.*",
+                "maximebf/debugbar": "~1.10.2",
+                "php": ">=5.3.0",
+                "symfony/finder": "~2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Barryvdh\\Debugbar\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "PHP Debugbar integration for Laravel",
+            "keywords": [
+                "debug",
+                "debugbar",
+                "laravel",
+                "profiler",
+                "webprofiler"
+            ],
+            "time": "2014-12-24 08:00:07"
+        },
+        {
+            "name": "ckeditor/ckeditor",
+            "version": "4.4.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ckeditor/ckeditor-releases.git",
+                "reference": "1db73e67e94b13e86d935026dca139442d0224ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/1db73e67e94b13e86d935026dca139442d0224ef",
+                "reference": "1db73e67e94b13e86d935026dca139442d0224ef",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+",
+                "LGPL-2.1+",
+                "MPL-1.1+"
+            ],
+            "authors": [
+                {
+                    "name": "CKSource",
+                    "homepage": "http://cksource.com"
+                }
+            ],
+            "description": "JavaScript WYSIWYG web text editor.",
+            "homepage": "http://ckeditor.com",
+            "keywords": [
+                "CKEditor",
+                "editor",
+                "fckeditor",
+                "html",
+                "javascript",
+                "richtext",
+                "text",
+                "wysiwyg"
+            ],
+            "time": "2014-11-25 15:45:20"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "1.0.2",
@@ -500,6 +595,59 @@
             "time": "2014-12-29 10:27:58"
         },
         {
+            "name": "frozennode/administrator",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FrozenNode/Laravel-Administrator.git",
+                "reference": "ae75e5ee066248bb9e65c99e436044821b227ce0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FrozenNode/Laravel-Administrator/zipball/ae75e5ee066248bb9e65c99e436044821b227ce0",
+                "reference": "ae75e5ee066248bb9e65c99e436044821b227ce0",
+                "shasum": ""
+            },
+            "require": {
+                "ckeditor/ckeditor": "4.*",
+                "laravel/framework": "4.*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/controllers"
+                ],
+                "psr-0": {
+                    "Frozennode\\Administrator": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Hartigan",
+                    "email": "jan@frozennode.com"
+                }
+            ],
+            "description": "A database interface package for Laravel",
+            "homepage": "http://administrator.frozennode.com",
+            "keywords": [
+                "admin",
+                "administrator",
+                "cms",
+                "database",
+                "laravel",
+                "laravel-administrator"
+            ],
+            "time": "2014-11-17 03:31:59"
+        },
+        {
             "name": "guzzle/guzzle",
             "version": "v3.9.2",
             "source": {
@@ -734,6 +882,62 @@
             "time": "2013-10-09 04:20:00"
         },
         {
+            "name": "laravel/cashier",
+            "version": "v2.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/cashier.git",
+                "reference": "3fb0e39304cf8584ec239f7096bcc1a7f271c93c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/cashier/zipball/3fb0e39304cf8584ec239f7096bcc1a7f271c93c",
+                "reference": "3fb0e39304cf8584ec239f7096bcc1a7f271c93c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "~4.1",
+                "illuminate/support": "~4.1",
+                "nesbot/carbon": "~1.0",
+                "php": ">=5.4.0",
+                "stripe/stripe-php": "~1.9",
+                "symfony/http-kernel": "~2.3"
+            },
+            "require-dev": {
+                "illuminate/routing": "~4.1",
+                "illuminate/view": "~4.1",
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Laravel\\Cashier\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "keywords": [
+                "billing",
+                "laravel",
+                "stripe"
+            ],
+            "time": "2014-07-18 20:15:27"
+        },
+        {
             "name": "laravel/framework",
             "version": "v4.2.16",
             "source": {
@@ -906,6 +1110,62 @@
                 "single sign on"
             ],
             "time": "2014-01-31 23:08:45"
+        },
+        {
+            "name": "maximebf/debugbar",
+            "version": "v1.10.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maximebf/php-debugbar.git",
+                "reference": "4971283c1fa8da051e97d1fa62e053d49259f7ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/4971283c1fa8da051e97d1fa62e053d49259f7ef",
+                "reference": "4971283c1fa8da051e97d1fa62e053d49259f7ef",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "~1.0",
+                "symfony/var-dumper": "~2.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "suggest": {
+                "kriswallsmith/assetic": "The best way to manage assets",
+                "monolog/monolog": "Log using Monolog",
+                "predis/predis": "Redis storage"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.10-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "DebugBar": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Bouroumeau-Fuseau",
+                    "email": "maxime.bouroumeau@gmail.com",
+                    "homepage": "http://maximebf.com"
+                }
+            ],
+            "description": "Debug bar in the browser for php application",
+            "homepage": "https://github.com/maximebf/php-debugbar",
+            "keywords": [
+                "debug"
+            ],
+            "time": "2014-12-17 08:39:39"
         },
         {
             "name": "monolog/monolog",
@@ -1360,6 +1620,54 @@
                 "stack"
             ],
             "time": "2014-11-23 20:37:11"
+        },
+        {
+            "name": "stripe/stripe-php",
+            "version": "v1.17.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stripe/stripe-php.git",
+                "reference": "e93d4f101fe0c01fb61fe820043ead545045ed3c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/e93d4f101fe0c01fb61fe820043ead545045ed3c",
+                "reference": "e93d4f101fe0c01fb61fe820043ead545045ed3c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.2"
+            },
+            "require-dev": {
+                "simpletest/simpletest": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib/Stripe/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stripe and contributors",
+                    "homepage": "https://github.com/stripe/stripe-php/contributors"
+                }
+            ],
+            "description": "Stripe PHP Library",
+            "homepage": "https://stripe.com/",
+            "keywords": [
+                "api",
+                "payment processing",
+                "stripe"
+            ],
+            "time": "2014-12-23 23:59:35"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3041,6 +3349,59 @@
             "time": "2014-12-03 10:02:59"
         },
         {
+            "name": "symfony/var-dumper",
+            "version": "v2.6.1",
+            "target-dir": "Symfony/Component/VarDumper",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/var-dumper.git",
+                "reference": "8f3ee04faeca3b8418229b2efbfc8b2b8625b8aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/8f3ee04faeca3b8418229b2efbfc8b2b8625b8aa",
+                "reference": "8f3ee04faeca3b8418229b2efbfc8b2b8625b8aa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-symfony_debug": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "Resources/functions/dump.php"
+                ],
+                "psr-0": {
+                    "Symfony\\Component\\VarDumper\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                }
+            ],
+            "description": "Symfony mechanism for exploring and dumping PHP variables",
+            "homepage": "http://symfony.com",
+            "keywords": [
+                "debug",
+                "dump"
+            ],
+            "time": "2014-11-18 10:08:24"
+        },
+        {
             "name": "twig/twig",
             "version": "v1.16.3",
             "source": {
@@ -3102,7 +3463,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "friendsofsymfony/user-bundle": 20
+        "friendsofsymfony/user-bundle": 20,
+        "frozennode/administrator": 20
     },
     "prefer-stable": false,
     "platform": [],

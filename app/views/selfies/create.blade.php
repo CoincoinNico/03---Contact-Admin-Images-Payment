@@ -11,10 +11,13 @@
     {{$errors->first('title', '<span class="has-error">:message</span>')}}
     <br/>
     <br/>
+    {{Form::text('price', '', array('class'=>'form-control', 'placeholder'=>'Le prix de vente de votre selfie'))}}
+    {{$errors->first('title', '<span class="has-error">:message</span>')}}
+    <br/>
+    <br/>
     {{ Form::file('picture') }}
     <br/>
     <br/>
-
     {{Form::submit('Ajouter le selfie', array('class'=>'btn btn-primary'))}}
     {{Form::close()}}
 	</div>

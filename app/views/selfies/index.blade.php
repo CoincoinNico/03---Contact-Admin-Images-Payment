@@ -41,5 +41,7 @@
 
 @endsection
 
-{{ HTML::script('js/masonry.js') }}
-{{ HTML::script('js/selfies.js') }}
+@section('javascript')
+	{{ HTML::script('js/masonry.js') }}
+	{{ HTML::script('js/selfies.js') }}
+@endsection

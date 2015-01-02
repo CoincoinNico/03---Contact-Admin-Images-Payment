@@ -24,5 +24,8 @@ vous invoquerez arobas extends('layouts.application') -->
 		<!-- On finit avec l'ajout du javascript -->
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+		@yield('javascript')
+		
 	</body>
 </html>

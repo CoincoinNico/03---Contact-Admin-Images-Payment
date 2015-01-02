@@ -8,7 +8,10 @@
 		"laravel/framework": "4.2.*",
 		"friendsofsymfony/user-bundle": "~2.0@dev",
 		"league/oauth1-client": "~1.0",
-		"codesleeve/laravel-stapler": "1.0.*"
+		"codesleeve/laravel-stapler": "1.0.*",
+		"frozennode/administrator": "dev-master",
+		"laravel/cashier": "~2.0",
+		"stripe/stripe-php": "~1.17"
 	},
 	"autoload": {
 		"classmap": [

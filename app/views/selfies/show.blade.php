@@ -4,8 +4,20 @@
 <div class="container">
 	<div class="main-page">
 		<h2>{{ $selfie-> title }}</h2>
-    <p>ajouté par {{ HTML::linkAction('UsersController@show', $selfie-> user-> email, array($selfie-> user-> id)) }}</p>
+    <img src="{{{ $selfie-> picture-> url('prompt') }}}" class="img-thumbnail selfie-pic">
+    <p>ajouté par {{ HTML::linkAction('UsersController@show', $selfie-> user-> email, array($selfie-> user-> id)) }}, prix: {{ $selfie -> price }} €</p>
+    <form action="{{url('pay')}}" method="POST">
+      <script
+        src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button"
+        data-key="{{Config::get('stripe.stripe.public')}}"
+        data-amount="{{ $selfie-> price }}"
+        data-name="Vente de photos"
+        data-description="{{ $selfie-> title. ", ". $selfie-> price  }} €"
+        data-image="{{ $selfie-> picture-> url('prompt') }}">
+      </script>
+    </form>
 	</div>
+
 	<div id="disqus_thread"></div>
   <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

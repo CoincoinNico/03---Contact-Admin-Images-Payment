@@ -4,32 +4,27 @@ class SelfiesController extends BaseController {
 
 	public function index()
 	{
-		// je récupère tous les selfies et les stocke dans une variable
-		$selfies = Selfie::all();
 		// la variable $selfies sera accessible dans la vue index
-		return View::make('selfies.index')->with('selfies', $selfies);
+		return View::make('selfies.index')->with('selfies', Selfie::all());
 	}
 
 	public function show($id)
 	{
-		// je récupère le selfie qu'on veut montrer grâce à son id
-		$selfie = Selfie::find($id);
 		// je retourne la vue associée, je pourrai appeler la variable $selfie
-		return View::make('selfies.show')->with('selfie', $selfie);
+		return View::make('selfies.show')->with('selfie', Selfie::find($id));
 	}
 
 	public function edit($id)
 	{
-		// je récupère le selfie qu'on veut montrer grâce à son id
-		$selfie = Selfie::find($id);
 		// je retourne la vue associée, je pourrai appeler la variable $selfie
-		return View::make('selfies.edit')->with('selfie', $selfie);
+		return View::make('selfies.edit')->with('selfie', Selfie::find($id));
 	}
 
 	public function update($id)
 	{
 		$rules = array(
-			'title' => array('required','min:5')
+			'title' => array('required','min:5'),
+			'price' => array('required')
 		);
 		$validator = Validator::make(Input::all(), $rules);
 
@@ -43,7 +38,8 @@ class SelfiesController extends BaseController {
     	// je récupère le selfie
     	$selfie = Selfie::find($id);
     	// je change la valeur du champ titre
-      $selfie->title = Input::get('title');
+      $selfie-> title = Input::get('title');
+      $selfie-> price = Input::get('price');
       // je le sauvegarde
       $selfie->save();
       // j'utilise les messages flash et je stocke Selfie dans 'message'
@@ -60,7 +56,8 @@ class SelfiesController extends BaseController {
 	{
 		//on impose des contraintes aux données du formulaire
 		$rules = array(
-			'title' => array('required','min:5')
+			'title' => array('required','min:5'),
+			'price' => array('required')
 		);
 		$validator = Validator::make(Input::all(), $rules);
 
@@ -74,7 +71,8 @@ class SelfiesController extends BaseController {
     	$data = array(
     		'title' => Input::get('title'),
     		'user_id' => Auth::user()-> id,
-    		'picture' => Input::file('picture')
+    		'picture' => Input::file('picture'),
+    		'price' => Input::get('price')
     	);
     	Selfie::create($data);
     	Session::flash('message', 'Selfie ajouté');
